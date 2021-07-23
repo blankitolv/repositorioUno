@@ -33,10 +33,18 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   letter-spacing: 60px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media (max-width: 610px) {
+  .body .container .icons {
+    letter-spacing: 40px;
+  }
 }
 
 .body .container .icons i {
@@ -44,6 +52,7 @@
   -webkit-transition: all 1s;
   transition: all 1s;
   text-shadow: 0px 0px 2px wheat;
+  margin-left: 15px;
 }
 
 .body .container .icons i:hover:nth-child(1) {
@@ -56,6 +65,24 @@
 
 .body .container .icons i:hover:nth-child(3) {
   text-shadow: 0px 0px 1px #ff75ff, 0 0 0.5em #b600a7, 0 0 0.1em #ae00ff;
+}
+
+@media (max-width: 570px) {
+  .body .container .icons i {
+    font-size: 110pt;
+  }
+}
+
+@media (max-width: 535px) {
+  .body .container .icons i {
+    font-size: 90pt;
+  }
+}
+
+@media (max-width: 500px) {
+  .body .container .icons i {
+    font-size: 70pt;
+  }
 }
 
 .body .footer {
